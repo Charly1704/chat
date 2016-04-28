@@ -1,0 +1,21 @@
+html(ng-app="FrankenChat")
+    head
+        title Micro Chat NEA
+        meta(charset="uft-8")
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        
+    body(ng-controller="chatCtrl")
+        div(ng-repeat="mens in mensajes") {{mens}}
+        h1 Chat
+        form()
+            div
+                input(type="text" name="mensaje" ng-model="object.mensaje")
+                input(type="submit" value="Enviar" ng-click="guardarMensaje()")
+        script(src="https://proyecto-carlossn.c9users.io/socket.io/socket.io.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js")
+        script(src="app.js")
+        
+        
+        
+        
+        
